@@ -5,6 +5,7 @@ class Formatter {
   }
 
   static sanitize(string) {
-    string.replace(/[^A-Za-z0-9-']+/g, '')
+    const regex = "/[^A-Za-z0-9-']+/g"
+    string.replace(regex, '')
   }
 }
