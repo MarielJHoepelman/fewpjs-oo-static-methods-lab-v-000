@@ -5,6 +5,7 @@ class Formatter {
   }
 
   static sanitize(string) {
-
+    let str = string.replaceAll("[^\\w\\s\\$]", "");
+    return str
   }
 }
