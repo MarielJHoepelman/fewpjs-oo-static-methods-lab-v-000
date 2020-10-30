@@ -4,7 +4,7 @@ class Formatter {
     return str
   }
 
-  static sanitize {
-    
+  static sanitize() {
+
   }
 }
