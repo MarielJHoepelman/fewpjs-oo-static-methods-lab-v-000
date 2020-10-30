@@ -4,5 +4,7 @@ class Formatter {
     return str
   }
 
-
+  static sanitize(string) {
+    string.replace(/[^A-Za-z0-9-']+/g, '')
+  }
 }
