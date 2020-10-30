@@ -6,6 +6,6 @@ class Formatter {
 
   static sanitize(string) {
     const regex = "/[^A-Za-z0-9-']+/g"
-    string.replaceAll(regex, '')
+    string.replace(regex '')
   }
 }
