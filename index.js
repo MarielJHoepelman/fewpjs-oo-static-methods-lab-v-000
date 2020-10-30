@@ -5,6 +5,7 @@ class Formatter {
   }
 
   static sanitize(string) {
+    console.log(string)
 
   }
 }
