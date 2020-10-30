@@ -8,4 +8,7 @@ class Formatter {
     const regex = /[^A-Za-z0-9\s-\']+/g
     return string.replace(regex, '')
   }
+
+  static titleize(string) {
+  }
 }
