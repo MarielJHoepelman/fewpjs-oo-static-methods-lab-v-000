@@ -23,7 +23,7 @@ class Formatter {
         titleizeString.push(word);
       }else{
         titleizeString.push(this.capitalize(word));
-      }
+      }  
     }
     return titleizeString.join(" ");
   }
