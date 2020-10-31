@@ -9,18 +9,22 @@ class Formatter {
     return string.replace(regex, '')
   }
 
-  const findWord = word => {
-    let word = array.find(element => element === "W")
-    return
-  }
+  // const findWord = word => {
+  //   let forbiddenWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+  //   let word = array.find(element => element === "W")
+  //   return
+  // }
 
   static titleize(string) {
     let array = string.split(" ");
     let titleizeString = [];
 
     for (const word of array){
-
-      titleizeString.push(this.capitalize(word));
+      if(word === "the") {
+        titleizeString.push(this.capitalize(word));
+      }else{
+        titleizeString.push(this.capitalize(word));
+      }
     }
     console.log(titleizeString)
     return titleizeString.join(" ");
