@@ -15,6 +15,6 @@ class Formatter {
     for (const word of array){
       titleizeString += capitalize(word)
     }
-    return titleizeString
+    return titleizeString;
   }
 }
