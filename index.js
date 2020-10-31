@@ -48,7 +48,7 @@ class Formatter {
       }else{
         return this.capitalize(word);
       }
-    }).
+    });
 
     return titleizeString.join(" ");
   }
