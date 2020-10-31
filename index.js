@@ -35,10 +35,10 @@ class Formatter {
     // })
 
     for (let i = 0; i < array.length; i++) {
-      if(i > 0 && this.findWord(word)) {
-        titleizeString.push(word);
+      if(i > 0 && this.findWord(array[i])) {
+        titleizeString.push(array[i]);
       }else{
-        titleizeString.push(this.capitalize(word));
+        titleizeString.push(this.capitalize(array[i]));
       }
     }
 
