@@ -26,13 +26,13 @@ class Formatter {
     //   }
     // }
 
-    array.forEach((word, index) => {
-      if(index > 0 && this.findWord(word)) {
-        titleizeString.push(word);
-      }else{
-        titleizeString.push(this.capitalize(word));
-      }
-    })
+    // array.forEach((word, index) => {
+    //   if(index > 0 && this.findWord(word)) {
+    //     titleizeString.push(word);
+    //   }else{
+    //     titleizeString.push(this.capitalize(word));
+    //   }
+    // })
 
     for (let i = 0; i < array.length; i++) {
       if(i > 0 && this.findWord(word)) {
