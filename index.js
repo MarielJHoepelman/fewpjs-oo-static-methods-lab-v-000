@@ -11,7 +11,7 @@ class Formatter {
 
   const findWord = word => {
     let forbiddenWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
-    let word = forbiddenWords.some(element => element === word)
+    return forbiddenWords.some(element => element === word)
 
   }
 
