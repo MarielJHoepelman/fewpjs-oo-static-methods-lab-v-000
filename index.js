@@ -17,14 +17,22 @@ class Formatter {
   static titleize(string) {
     let array = string.split(" ");
     let titleizeString = [];
+    // 
+    // for (const word of array){
+    //   if(titleizeString.length > 0 && this.findWord(word)) {
+    //     titleizeString.push(word);
+    //   }else{
+    //     titleizeString.push(this.capitalize(word));
+    //   }  
+    // }
 
-    for (const word of array){
-      if(titleizeString.length > 0 && this.findWord(word)) {
+    array.forEach((word, index) => {
+      if(index > 0 && this.findWord(word)) {
         titleizeString.push(word);
       }else{
         titleizeString.push(this.capitalize(word));
       }  
-    }
+    })
     return titleizeString.join(" ");
   }
 }
