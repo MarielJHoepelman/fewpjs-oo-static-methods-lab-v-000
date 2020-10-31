@@ -50,7 +50,7 @@ class Formatter {
     //   }
     // });
 
-    return array.map((word, index) => index > 0 && this.findWord(word)) ? word : this.capitalize(word)).join(" ")
+    return array.map((word, index) => index > 0 && this.findWord(word) ? word : this.capitalize(word)).join(" ")
 
     // return titleizeString.join(" ");
   }
