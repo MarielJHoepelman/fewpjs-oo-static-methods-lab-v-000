@@ -18,30 +18,6 @@ class Formatter {
     let array = string.split(" ");
     let titleizeString = [];
 
-    // for (const word of array){
-    //   if(titleizeString.length > 0 && this.findWord(word)) {
-    //     titleizeString.push(word);
-    //   }else{
-    //     titleizeString.push(this.capitalize(word));
-    //   }
-    // }
-
-    // array.forEach((word, index) => {
-    //   if(index > 0 && this.findWord(word)) {
-    //     titleizeString.push(word);
-    //   }else{
-    //     titleizeString.push(this.capitalize(word));
-    //   }
-    // })
-
-    // for (let i = 0; i < array.length; i++) {
-    //   if(i > 0 && this.findWord(array[i])) {
-    //     titleizeString.push(array[i]);
-    //   }else{
-    //     titleizeString.push(this.capitalize(array[i]));
-    //   }
-    // }
-
     // return array.map((word, index) => index > 0 && this.findWord(word) ? word : this.capitalize(word)).join(" ")
 
     titleizeString = array.map((word, index) => {
