@@ -20,7 +20,7 @@ class Formatter {
     let titleizeString = [];
 
     for (const word of array){
-      if(word === "the") {
+      if(this.forbiddenWords(word)) {
         titleizeString.push(word);
       }else{
         titleizeString.push(this.capitalize(word));
