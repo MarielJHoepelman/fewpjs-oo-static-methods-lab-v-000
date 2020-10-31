@@ -33,6 +33,15 @@ class Formatter {
         titleizeString.push(this.capitalize(word));
       }
     })
+
+    for (let i = 0; i < array.length; i++) {
+      if(i > 0 && this.findWord(word)) {
+        titleizeString.push(word);
+      }else{
+        titleizeString.push(this.capitalize(word));
+      }
+    }
+
     return titleizeString.join(" ");
   }
 }
