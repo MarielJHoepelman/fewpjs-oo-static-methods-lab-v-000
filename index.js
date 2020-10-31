@@ -9,7 +9,7 @@ class Formatter {
     return string.replace(regex, '')
   }
 
-  const findWord = word => {
+  findWord = word => {
     let forbiddenWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     return forbiddenWords.some(element => element === word)
   }
