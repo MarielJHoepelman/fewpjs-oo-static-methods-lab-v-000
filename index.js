@@ -16,6 +16,6 @@ class Formatter {
       titleizeString.push(this.capitalize(word));
     }
     console.log(titleizeString)
-    return titleizeString.join();
+    return titleizeString.join(" ");
   }
 }
