@@ -41,6 +41,7 @@ class Formatter {
     //     titleizeString.push(this.capitalize(array[i]));
     //   }
     // }
+
     // return array.map((word, index) => index > 0 && this.findWord(word) ? word : this.capitalize(word)).join(" ")
 
     titleizeString = array.map((word, index) => {
