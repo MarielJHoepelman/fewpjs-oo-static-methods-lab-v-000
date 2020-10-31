@@ -42,14 +42,14 @@ class Formatter {
     //   }
     // }
 
-    array.map((word, index) => {
+    return array.map((word, index) => {
       if(index > 0 && this.findWord(word)) {
         return word
       }else{
         return this.capitalize(word);
       }
-    })
+    }).join(" ");
 
-    return titleizeString.join(" ");
+    // return titleizeString
   }
 }
