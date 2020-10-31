@@ -6,7 +6,7 @@ class Formatter {
 
   static sanitize(string) {
     const regex = /[^A-Za-z0-9\s-\']+/g
-    return string.replace(regex, '')
+    return string.replace(regex, '');
   }
 
   static findWord(word) {
