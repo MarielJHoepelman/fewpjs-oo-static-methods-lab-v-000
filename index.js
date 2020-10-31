@@ -13,7 +13,7 @@ class Formatter {
     let array = string.split(" ");
     let titleizeString = "";
     for (const word of array){
-      titleizeString += this.capitalize(word)
+      titleizeString += this.capitalize(word) + " ";
     }
     console.log(titleizeString)
     return titleizeString;
