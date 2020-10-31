@@ -9,11 +9,17 @@ class Formatter {
     return string.replace(regex, '')
   }
 
+  const findWord = word => {
+    let word = array.find(element => element === "W")
+    return
+  }
+
   static titleize(string) {
     let array = string.split(" ");
     let titleizeString = [];
-    let forbiddenWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+
     for (const word of array){
+
       titleizeString.push(this.capitalize(word));
     }
     console.log(titleizeString)
