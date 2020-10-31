@@ -17,7 +17,7 @@ class Formatter {
   static titleize(string) {
     let array = string.split(" ");
     let titleizeString = [];
-    //
+
     // for (const word of array){
     //   if(titleizeString.length > 0 && this.findWord(word)) {
     //     titleizeString.push(word);
@@ -26,21 +26,21 @@ class Formatter {
     //   }
     // }
 
-    // array.forEach((word, index) => {
-    //   if(index > 0 && this.findWord(word)) {
-    //     titleizeString.push(word);
-    //   }else{
-    //     titleizeString.push(this.capitalize(word));
-    //   }
-    // })
-
-    for (let i = 0; i < array.length; i++) {
-      if(i > 0 && this.findWord(array[i])) {
-        titleizeString.push(array[i]);
+    array.forEach((word, index) => {
+      if(index > 0 && this.findWord(word)) {
+        titleizeString.push(word);
       }else{
-        titleizeString.push(this.capitalize(array[i]));
+        titleizeString.push(this.capitalize(word));
       }
-    }
+    })
+
+    // for (let i = 0; i < array.length; i++) {
+    //   if(i > 0 && this.findWord(array[i])) {
+    //     titleizeString.push(array[i]);
+    //   }else{
+    //     titleizeString.push(this.capitalize(array[i]));
+    //   }
+    // }
 
     return titleizeString.join(" ");
   }
