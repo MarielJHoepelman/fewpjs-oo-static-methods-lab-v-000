@@ -9,11 +9,11 @@ class Formatter {
     return string.replace(regex, '')
   }
 
-  // const findWord = word => {
-  //   let forbiddenWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
-  //   let word = array.find(element => element === "W")
-  //   return
-  // }
+  const findWord = word => {
+    let forbiddenWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+    let word = array.some(element => element === "word")
+
+  }
 
   static titleize(string) {
     let array = string.split(" ");
