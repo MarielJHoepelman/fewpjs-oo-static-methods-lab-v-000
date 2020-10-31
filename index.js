@@ -25,8 +25,6 @@ class Formatter {
         return this.capitalize(word);
       }
     });
-
-
     return titleizeString.join(" ");
   }
 }
