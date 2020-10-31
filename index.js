@@ -19,7 +19,7 @@ class Formatter {
     let titleizeString = [];
 
     for (const word of array){
-      if(this.findWord(word) && titleizeString.length > 0) {
+      if(titleizeString.length > 0 && this.findWord(word) && ) {
         titleizeString.push(word);
       }else{
         titleizeString.push(this.capitalize(word));
