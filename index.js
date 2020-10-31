@@ -12,6 +12,7 @@ class Formatter {
   static titleize(string) {
     let array = string.split(" ");
     let titleizeString = [];
+    let forbiddenWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     for (const word of array){
       titleizeString.push(this.capitalize(word));
     }
