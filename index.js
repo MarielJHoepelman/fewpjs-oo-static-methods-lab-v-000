@@ -10,5 +10,11 @@ class Formatter {
   }
 
   static titleize(string) {
+    let array = string.split(" ");
+    let titleizeString;
+    for (const word of array){
+      titleizeString += capitalize(word)
+    }
+    return titleizeString
   }
 }
