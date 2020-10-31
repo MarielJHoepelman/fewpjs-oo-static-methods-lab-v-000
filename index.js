@@ -21,7 +21,7 @@ class Formatter {
 
     for (const word of array){
       if(word === "the") {
-        titleizeString.push(this.capitalize(word));
+        titleizeString.push(word);
       }else{
         titleizeString.push(this.capitalize(word));
       }
