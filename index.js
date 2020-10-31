@@ -42,15 +42,15 @@ class Formatter {
     //   }
     // }
 
-    // titleizeString = array.map((word, index) => {
-    //   if(index > 0 && this.findWord(word)) {
-    //     return word
-    //   }else{
-    //     return this.capitalize(word);
-    //   }
-    // });
+    titleizeString = array.map((word, index) => {
+      if(index > 0 && this.findWord(word)) {
+        return word
+      }else{
+        return this.capitalize(word);
+      }
+    });
 
-    return array.map((word, index) => index > 0 && this.findWord(word) ? word : this.capitalize(word)).join(" ")
+    // return array.map((word, index) => index > 0 && this.findWord(word) ? word : this.capitalize(word)).join(" ")
 
     // return titleizeString.join(" ");
   }
